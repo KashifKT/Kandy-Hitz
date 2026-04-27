@@ -134,29 +134,37 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 }
 .hero-socials a:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-3px); }
 
-/* Phone Mockup */
+/* Tech Card Visual */
 .hero-visual { flex: 1; display: flex; justify-content: center; align-items: center; position: relative; z-index: 1; }
-.phone-mockup {
-  width: 220px; height: 420px; background: var(--card);
-  border-radius: 36px; border: 2px solid var(--border); padding: 16px;
-  box-shadow: 0 30px 80px rgba(0,0,0,.5), 0 0 0 1px rgba(84,197,248,.1);
-  animation: float 4s ease-in-out infinite; position: relative;
+.tech-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 24px; padding: 2.5rem 2rem;
+  display: flex; flex-direction: column; align-items: center; gap: 1.8rem;
+  box-shadow: 0 30px 80px rgba(0,0,0,.4), 0 0 0 1px rgba(84,197,248,.08);
+  animation: float 4s ease-in-out infinite;
+  min-width: 280px;
 }
-@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-15px)} }
-.phone-screen { background: #1a2035; border-radius: 24px; height: 100%; overflow: hidden; padding: 12px; }
-.app-bar { height: 36px; background: var(--gradient); border-radius: 10px; margin-bottom: 10px; }
-.app-card { height: 70px; background: rgba(84,197,248,.1); border-radius: 12px; margin-bottom: 8px; border: 1px solid var(--border); }
-.app-card.small { height: 45px; }
-.app-card.medium { height: 55px; }
-.app-row { display: flex; gap: 6px; margin-bottom: 8px; }
-.app-chip { flex: 1; height: 28px; background: rgba(84,197,248,.15); border-radius: 20px; border: 1px solid var(--border); }
-.flutter-badge {
-  position: absolute; bottom: -15px; right: -15px;
-  width: 60px; height: 60px; background: white; border-radius: 16px;
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 8px 24px rgba(0,0,0,.3); padding: 8px;
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+.tech-center { display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+.flutter-logo { width: 72px; height: 72px; object-fit: contain; filter: drop-shadow(0 0 20px rgba(84,197,248,.4)); }
+.tech-label { font-size: 1.3rem; font-weight: 800; color: var(--text); }
+.tech-sub { font-size: .75rem; color: var(--text-muted); letter-spacing: .5px; }
+.tech-platforms { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; width: 100%; }
+.platform-chip {
+  display: flex; align-items: center; gap: .6rem;
+  background: rgba(255,255,255,.04); border: 1px solid var(--border);
+  border-radius: 10px; padding: .6rem .9rem;
+  font-size: .82rem; color: var(--text-muted);
+  transition: border-color .3s, color .3s;
 }
-.flutter-badge img { width: 100%; }
+.platform-chip:hover { border-color: var(--primary); color: var(--text); }
+.platform-chip i { font-size: 1rem; }
+.tech-stack-row { display: flex; flex-wrap: wrap; gap: .4rem; justify-content: center; }
+.tech-stack-row span {
+  padding: .25rem .75rem; border-radius: 20px;
+  background: rgba(84,197,248,.08); border: 1px solid var(--border);
+  font-size: .72rem; color: var(--primary); font-weight: 500;
+}
 
 /* ══ ABOUT ══ */
 .about { padding: 6rem 0; background: var(--bg2); }

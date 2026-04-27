@@ -161,6 +161,7 @@ document.querySelectorAll('.project-img.slider').forEach(slider => {
     const img = document.createElement('img');
     img.src = `images/${folder}/${i}.${ext}`;
     img.alt = folder;
+    img.loading = 'lazy';
     if (i === 1) img.classList.add('active');
     slider.appendChild(img);
   }
