@@ -105,7 +105,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 /* ══ HERO ══ */
 .hero {
   min-height: 100vh; display: flex; align-items: center;
-  padding: 7rem 6% 4rem; gap: 4rem;
+  padding: 5rem 6% 3rem; gap: 4rem;
   position: relative; overflow: hidden;
 }
 .hero-bg-shapes { position: absolute; inset: 0; pointer-events: none; }
@@ -348,7 +348,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 
 /* Tablet portrait ≤768px */
 @media (max-width: 768px) {
-  .hero { flex-direction: column; text-align: center; padding-top: 6rem; gap: 1.5rem; }
+  .hero { flex-direction: column; text-align: center; padding-top: 5rem; padding-bottom: 2rem; gap: 1rem; min-height: auto; }
   .hero-desc { margin: 0 auto 1.5rem; }
   .hero-btns, .hero-socials { justify-content: center; }
   .hero-visual { display: none; }
@@ -389,7 +389,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   .navbar { padding: .8rem 4%; }
   .container { padding: 0 4%; }
 
-  .hero { padding: 4.5rem 4% 2rem; min-height: auto; gap: 1.5rem; }
+  .hero { padding: 4rem 4% 1.5rem; min-height: auto; gap: 1rem; }
   .hero-greeting { margin-bottom: .3rem; }
   .hero-name { margin-bottom: .5rem; }
   .hero-desc { margin-bottom: 1.2rem; }
