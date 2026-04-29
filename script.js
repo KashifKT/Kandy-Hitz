@@ -198,7 +198,7 @@ document.querySelectorAll('.project-img.slider').forEach(slider => {
 
   prev.addEventListener('click', e => { e.stopPropagation(); goTo(current - 1); });
   next.addEventListener('click', e => { e.stopPropagation(); goTo(current + 1); });
-  setInterval(() => goTo(current + 1), 3500);
+  setInterval(() => goTo(current + 1), 2000 + Math.random() * 3000);
 });
 
 // ── Project Modal ──
