@@ -118,7 +118,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 
 /* ══ HERO ══ */
 .hero {
-  min-height: 100vh; display: flex; align-items: center;
+  min-height: auto; display: flex; align-items: center;
   padding: 5rem 6% 2rem; gap: 3rem;
   position: relative; overflow: hidden;
 }
@@ -358,9 +358,10 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 
 /* Tablet portrait ≤768px */
 @media (max-width: 768px) {
-  .hero { flex-direction: column; text-align: center; padding-top: 4.5rem; padding-bottom: 1.5rem; gap: .8rem; min-height: auto; }
-  .hero-desc { margin: 0 auto 1rem; }
-  .hero-btns { margin-bottom: 1rem; }
+  .hero { flex-direction: column; text-align: center; padding: 4rem 4% 1rem; gap: .6rem; }
+  .hero-desc { margin: 0 auto .8rem; }
+  .hero-btns { margin-bottom: .8rem; justify-content: center; }
+  .hero-socials { justify-content: center; }
   .hero-visual { display: none; }
 
   .about { padding: 3rem 0; }
@@ -399,14 +400,14 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   .navbar { padding: .8rem 4%; }
   .container { padding: 0 4%; }
 
-  .hero { padding: 3.5rem 4% 1rem; min-height: auto; gap: .6rem; }
-  .hero-greeting { margin-bottom: .2rem; font-size: .85rem; }
-  .hero-name { margin-bottom: .4rem; }
-  .hero-title { margin-bottom: .6rem; }
-  .hero-desc { margin-bottom: 1rem; font-size: .85rem; }
-  .hero-btns { gap: .5rem; margin-bottom: 1rem; }
-  .hero-btns .btn { width: 100%; max-width: 260px; justify-content: center; }
-  .hero-socials { gap: .5rem; }
+  .hero { padding: 3rem 4% .5rem; gap: .3rem; }
+  .hero-greeting { margin-bottom: .1rem; font-size: .85rem; }
+  .hero-name { margin-bottom: .3rem; }
+  .hero-title { margin-bottom: .5rem; min-height: 1.6rem; }
+  .hero-desc { margin-bottom: .8rem; font-size: .82rem; line-height: 1.6; }
+  .hero-btns { gap: .4rem; margin-bottom: .8rem; flex-direction: column; align-items: center; }
+  .hero-btns .btn { width: 100%; max-width: 240px; justify-content: center; }
+  .hero-socials { gap: .4rem; }
   .nav-tagline { display: none; }
 
   .about { padding: 2.5rem 0; }
@@ -558,3 +559,4 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
   .modal-content { padding: 1.2rem; }
   .modal-title-row h2 { font-size: 1.2rem; }
 }
+
